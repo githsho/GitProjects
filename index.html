@@ -7,21 +7,165 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>Boot One</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#IdProduct">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#IdService">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#IdContact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
+    <!--slider-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/steel-machine.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>As a metal, copper is ductile and malleable and valued for its high thermal and electric conductivity. Copper occurs naturally but its greatest source is in minerals like chalcopyrite and bornite, and you can easily identify it by its reddish-gold colour.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/worker.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gears.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--- Welcome Section -->
+<div class="container-fluid padding"><!--we will be adding some addiontal padding between containers & rows. So row,text-center are bootstrap classes-->
+    <!--   n-f  p-->                 <!-- d  w w   x-->
+ <div class="row welcome text-center" id="IdProduct"><!--welcome is class that will style ourselves later to give that section its width among some other things-->
+     <div class="col-12"><!--col-12 bcoz it takes up 100% of screen and all 12 columns. Then our h1 class=display-4-->  <!-- d   l-2-->
+         <h1 class="display-4">Our Products</h1><!--now below hr-->  <!-- h  d-4-->
+     </div>
+     <hr>
+     <div class="col-12"><!--we will use lead -->  <!--l-2   p l-->
+         <p class="lead">Reliable Zinc is into metals and mining industry producing zinc and silver.</p>
+     </div>
+ </div>
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding"><!--we will add padding to this container and then row & also add padding to the row        n-->
+ <div class="row text-center padding"><!--so actually we gonna add padding underneath the horizontal row(below CSS3)        w  x   p--> 
+     <div class="col-xs-12 col-sm-6 col-md-4"><!--   d    x-2  s-6   m-4 -->
+        <img src="img/copperpowder.png" class="img-fluid" widht="48px;" alt="" /><!--lets add icon    i   f   f-c-->
+         <h3>Cooper Powder</h3>              <!-- h-->    
+         <p>copper is ductile and malleable and valued for its high thermal and electric conductivity</p>  
+     </div>
+     <div class="col-xs-12 col-sm-6 col-md-4">       
+        <img src="img/zinc1.png" class="img-fluid" widht="48px;" alt="" />
+         <h3>Zinc Powder</h3>
+         <p>Built with the latest version of Bootstarp, Bootstrap 4</p>
+     </div>
+     <div class="col-sm-12 col-sm-6 col-md-4">
+        <img src="img/sulphur1.png" class="img-fluid" widht="48px;" alt="" />
+         <h3>Sulphur Powder</h3>
+         <p>Sulphur Powder is ductile and malleable and valued for its high thermal and electric conductivity</p>
+     </div>
+ </div><!--hr between closing divs and container.So we have padding on both sides of the hr-->
+ <hr class="my-4"><!--spans whole page and gives light grey color-->
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+	<div class="row justify-content-evenly padding" id="IdService">
+		<div class="col-lg-6">   <!--  l-g-6-->
+			<h2>Production and Properties of Copper and Copper Alloy Powders</h2>
+			<p>Granular copper powder can be produced by a number of methods</p>
+			<p>the most important being atomization, electrolysis, hydrometallurgy and solid state reduction. Each method yields a powder having certain inherent characteristics.</p>
+			<p>Typically, copper is melted and the liquid metal flows through an orifice where it is struck by a high velocity stream of gas or liquid, usually water, thus breaking the molten metal into particles which solidify rapidly. Particle size and shape are influenced particularly by the atomizing medium, the pressure and the flow rate. Controlled small additions of deoxidizing elements, such as phosphorus, also influence the particle size and shape.</p>
+			<br>
+			<a href="" class="btn btn-primary">Learn More</a>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/powder1.jpg" class="img-fluid">
+		</div>
+	</div>
+</div>
+
+<!--Contact Section-->
+ <div class="row justify-content-evenly pt-2 pb-5" style="background-color: #f1f1f1;">
+     <div class="col-md-5 mt-5" id="IdContact">
+         <h3 class="mb-4">Contact Form</h3>
+        <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+     </div>
+     <div class="col-md-5 mt-5">
+         <h3 class="mb-4">Address</h3>
+         <p>1180 kinblerly Way , Williston Park<br/>
+        New- York - 11596<br/>
+        <i class="bi bi-telephone"></i>
+        : 91777777
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56268.268528757806!2d-74.06276580501701!3d40.762210193963526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2566163e31c47%3A0x26f74e5d8df0aa62!2sRichard%20W.%20DeKorte%20Park!5e0!3m2!1sen!2sin!4v1639780100492!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+ </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
